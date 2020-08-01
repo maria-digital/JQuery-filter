@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>Content Filters | CodyHouse</title>
+</head>
+<body>
+	<main class="cd-main-content">
+		<section class="cd-gallery">
+			<ul>
+				<li class="mix color-1 check1 radio2"><img src="img/img-1.jpg" alt="Image 1"></li>
+				<li class="mix color-2 check2 radio2"><img src="img/img-2.jpg" alt="Image 2"></li>
+				<li class="mix color-1 check3 radio3"><img src="img/img-3.jpg" alt="Image 3"></li>
+				<li class="mix color-1 check3 radio2"><img src="img/img-4.jpg" alt="Image 4"></li>
+				<li class="mix color-1 check1 radio3"><img src="img/img-5.jpg" alt="Image 5"></li>
+				<li class="mix color-2 check2 radio3"><img src="img/img-6.jpg" alt="Image 6"></li>
+				<li class="mix color-2 check4 radio2"><img src="img/img-7.jpg" alt="Image 7"></li>
+				<li class="mix color-1 check6 radio3"><img src="img/img-8.jpg" alt="Image 8"></li>
+				<li class="mix color-2 check1 radio2"><img src="img/img-9.jpg" alt="Image 9"></li>
+				<li class="mix color-1 check5 radio2"><img src="img/img-10.jpg" alt="Image 10"></li>
+				<li class="mix color-1 check3 radio3"><img src="img/img-11.jpg" alt="Image 11"></li>
+				<li class="mix color-2 check4 radio3"><img src="img/img-12.jpg" alt="Image 12"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter filter-is-visible">
+			<form>
+
+				<div class="cd-filter-block ">
+					<h4>Services</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">Animal allowed</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">Smooking Room</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">Sea View</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check4" type="checkbox" id="checkbox4">
+							<label class="checkbox-label" for="checkbox4">Swimming Pool</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check5" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="checkbox5">Wifi 24 H</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check6" type="checkbox" id="checkbox6">
+							<label class="checkbox-label" for="checkbox6">Breakfast Included</label>
+						</li>
+
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Reviews</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+							<label class="radio-label" for="radio1">0.0</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+							<label class="radio-label" for="radio2">2.0</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+							<label class="radio-label" for="radio3">4.0</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio4" type="radio" name="radioButton" id="radio4">
+							<label class="radio-label" for="radio4">6.0</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio5" type="radio" name="radioButton" id="radio5">
+							<label class="radio-label" for="radio5">8.0</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".radio6" type="radio" name="radioButton" id="radio6">
+							<label class="radio-label" for="radio6">10</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+			</form>
+		</div> <!-- cd-filter -->
+	</main> <!-- cd-main-content -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

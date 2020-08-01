@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Тестовая страница</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav"><a class="header-nav__logo" href="/">
+          <div class="sprite__logo"></div></a></nav>
+    </header>
+    <main>
+      <div class="container">
+        <div>
+          <h2>Services</h2>
+          <ul class="search__servises" id="myBtnContainer">
+            <li>
+              <button class="btn" type="button" id="animals">Animal Allowed</button>
+            </li>
+            <li>
+              <button class="btn" type="button" id="smoking">Smoking Room</button>
+            </li>
+            <li>
+              <button class="btn" type="button" id="view">Sea View</button>
+            </li>
+            <li>
+              <button class="btn" type="button" id="pool">Swimming Pool</button>
+            </li>
+            <li>
+              <button class="btn" type="button" id="wifi">Wifi 24 H</button>
+            </li>
+            <li>
+              <button class="btn" type="button" id="eat">Breakfast Included</button>
+            </li>
+          </ul>
+          <h2>Room Size</h2>
+          <div id="sizeContainer">
+            <input class="input" placeholder="from" id="from">
+            <input class="input" placeholder="to" id="to">
+          </div>
+          <h2>Reviews</h2>
+          <ul class="search__reviews" id="reviewsContainer">
+            <li>
+              <button class="btn" type="button" id="0">0.0</button>
+            </li>
+            <li>
+              <button class="btn" type="button" id="2">2.0</button>
+            </li>
+            <li>
+              <button class="btn" type="button" id="4">4.0</button>
+            </li>
+            <li>
+              <button class="btn" type="button" id="6">6.0</button>
+            </li>
+            <li>
+              <button class="btn" type="button" id="8">8.0</button>
+            </li>
+            <li>
+              <button class="btn" type="button" id="10">10.0</button>
+            </li>
+          </ul>
+        </div>
+        <div class="container__rooms">
+          <div class="container__image">
+            <div class="filterDiv" data-groups="[&quot;smoking&quot;, &quot;wifi&quot;, &quot;eat&quot;]"><span>Adriatic Suite</span><span class="rating">8</span><span class="rating">57</span></div>
+            <div class="filterDiv" data-groups="[&quot;view&quot;, &quot;wifi&quot;, &quot;eat&quot;, &quot;animals&quot;]"><span>Gallery</span><span class="rating">9.4</span><span class="rating">37</span></div>
+          </div>
+          <div class="container__image">
+            <div class="filterDiv" data-groups="[&quot;wifi&quot;, &quot;eat&quot;, &quot;animals&quot;]"><span>Atelier</span><span class="rating">7.2</span><span class="rating">25</span></div>
+            <div class="filterDiv" data-groups="[&quot;view&quot;, &quot;wifi&quot;, &quot;eat&quot;, &quot;pool&quot;]"><span>Grand Piazza Suite</span><span class="rating">8.3</span><span class="rating">78</span></div>
+          </div>
+          <div class="container__image">
+            <div class="filterDiv" data-groups="[&quot;view&quot;, &quot;wifi&quot;, &quot;eat&quot;, &quot;animals&quot;]"> <span>Grand Atelier</span><span class="rating">7</span><span class="rating">65</span></div>
+            <div class="filterDiv" data-groups="[&quot;view&quot;, &quot;wifi&quot;, &quot;eat&quot;, &quot;animals&quot;, &quot;pool&quot;]"><span>Gallery Suite</span><span class="rating">9.8</span><span class="rating">97</span></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/shufflejs@5"></script>
+    <script src="all.js"></script>
+  </body>
+</html>

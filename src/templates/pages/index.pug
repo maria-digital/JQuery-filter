@@ -1,0 +1,70 @@
+extends ../layout/main
+
+block main
+      main
+            div.container
+                  div
+                        h2 Services
+                        ul#myBtnContainer.search__servises
+                              li
+                                    button(class='btn' type='button' id='animals') Animal Allowed
+                              li
+                                    button(class='btn' type='button' id='smoking') Smoking Room
+                              li
+                                    button(class='btn' type='button' id='view') Sea View
+                              li
+                                    button(class='btn' type='button' id='pool') Swimming Pool
+                              li
+                                    button(class='btn' type='button' id='wifi') Wifi 24 H
+                              li
+                                    button(class='btn' type='button' id='eat') Breakfast Included
+
+                        h2 Room Size
+                        div#sizeContainer
+                              input(placeholder='from' id="from" class="input")
+                              -
+                              input(placeholder='to' id="to" class="input")
+                        h2 Reviews
+                        ul#reviewsContainer.search__reviews
+                              li
+                                    button(class='btn' type='button' id='0') 0.0
+                              li
+                                    button(class='btn' type='button' id='2') 2.0
+                              li
+                                    button(class='btn' type='button' id='4') 4.0
+                              li
+                                    button(class='btn' type='button' id='6') 6.0
+                              li
+                                    button(class='btn' type='button' id='8') 8.0
+                              li
+                                    button(class='btn' type='button' id='10') 10.0
+                  .container__rooms
+                        div.container__image
+                              div(data-groups='["smoking", "wifi", "eat"]' class="filterDiv")
+                                    span Adriatic Suite
+                                    span.rating 8
+                                    span.rating 57
+                              div(data-groups='["view", "wifi", "eat", "animals"]' class="filterDiv")
+                                    span Gallery
+                                    span.rating 9.4
+                                    span.rating 37
+                        div.container__image
+                              div(data-groups='["wifi", "eat", "animals"]' class="filterDiv")
+                                    span Atelier
+                                    span.rating 7.2
+                                    span.rating 25
+                              div(data-groups='["view", "wifi", "eat", "pool"]' class="filterDiv")
+                                    span Grand Piazza Suite
+                                    span.rating 8.3
+                                    span.rating 78
+                        div.container__image
+                              div(data-groups='["view", "wifi", "eat", "animals"]' class="filterDiv") 
+                                    span Grand Atelier
+                                    span.rating 7
+                                    span.rating 65
+                              div(data-groups='["view", "wifi", "eat", "animals", "pool"]' class="filterDiv")
+                                    span Gallery Suite
+                                    span.rating 9.8
+                                    span.rating 97
+            
+            
