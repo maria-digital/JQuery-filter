@@ -17,17 +17,17 @@ for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function(e) {
         let current = document.getElementsByClassName("active");
         const id = e.target.id;
-        if (id === currentValue) {
-            filterSelection('all');
+        if (id === currentValueServices) {
             this.classList.remove("active");
-            currentValue = 'all';
+            shuffleInstance.filter();
+            currentValueServices = 'all';
         } else {
             if (current[0]){
                 current[0].className = current[0].className.replace("active", "");
             }
             this.className += " active";
-            filterSelection(id);
-            currentValue = id;
+            shuffleInstance.filter(id);
+            currentValueServices = id;
         }
     });
 }
@@ -43,14 +43,16 @@ for (let i = 0; i < buttonsReviews.length; i++) {
         const id = e.target.id;
         if (id === currentValueReviews) {
             this.classList.remove("active");
-            filterReviews(0);
+            shuffleInstance.filter();
             currentValueReviews = 0;
         } else {
             if (current[0]){
                 current[0].className = current[0].className.replace("active", "");
             }
             this.className += " active";
-            filterReviews(id);
+            shuffleInstance.filter(function (element) {
+                return element.children[1].innerText >= id;
+            });
             currentValueReviews = id;
         }
     });
